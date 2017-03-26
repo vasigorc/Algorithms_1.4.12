@@ -10,6 +10,7 @@ object HalfMergeSort extends App{
     val result = mergeHelper(first.toList, second.toList, List())
     println(s"${result.mkString("{",",","}")} with a length of ${result.length}" +
       s" was sorted in $counter steps")
+    counter = 0
   }
 
   def mergeHelper(a: List[Int], b: List[Int], result: List[Int]):List[Int]={
