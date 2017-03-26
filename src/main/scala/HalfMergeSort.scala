@@ -1,4 +1,7 @@
 package ca.vgorcinschi.algorithms_1_4_2
+
+import scala.annotation.tailrec
+
 /**
   * Created by vgorcinschi on 26/03/17.
   */
@@ -13,6 +16,7 @@ object HalfMergeSort extends App{
     counter = 0
   }
 
+  @tailrec
   def mergeHelper(a: List[Int], b: List[Int], result: List[Int]):List[Int]={
     counter+=1
     (a, b) match {
